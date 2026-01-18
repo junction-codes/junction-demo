@@ -44,3 +44,9 @@
 # Ignore IDE project files.
 .idea
 *.iml
+.vscode
+
+/app/assets/builds/*
+!/app/assets/builds/.keep
+
+/app/assets/svg/icons/**/*.svg
