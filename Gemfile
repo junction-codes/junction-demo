@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gem "junction-codes", git: "https://github.com/junction-codes/junction.git", branch: "main"
 gem "junction-github", git: "https://github.com/junction-codes/junction-github.git", branch: "main"
-gem "opentelemetry-exporter-otlp", "~> 0.32"
+gem "opentelemetry-exporter-otlp", "~> 0.33"
 gem "opentelemetry-instrumentation-all", "~> 0.90"
 gem "opentelemetry-sdk", "~> 1.10"
 gem "propshaft"
