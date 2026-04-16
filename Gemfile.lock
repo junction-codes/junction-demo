@@ -251,9 +251,9 @@ GEM
     omniauth-rails_csrf_protection (2.0.1)
       actionpack (>= 4.2)
       omniauth (~> 2.0)
-    opentelemetry-api (1.8.0)
+    opentelemetry-api (1.9.0)
       logger
-    opentelemetry-common (0.23.0)
+    opentelemetry-common (0.24.0)
       opentelemetry-api (~> 1.0)
     opentelemetry-exporter-otlp (0.32.0)
       google-protobuf (>= 3.18)
@@ -416,14 +416,15 @@ GEM
       opentelemetry-helpers-sql-processor
       opentelemetry-instrumentation-base (~> 0.25)
       opentelemetry-semantic_conventions (>= 1.8.0)
-    opentelemetry-registry (0.4.0)
+    opentelemetry-registry (0.5.0)
       opentelemetry-api (~> 1.1)
-    opentelemetry-sdk (1.10.0)
+    opentelemetry-sdk (1.11.0)
+      logger
       opentelemetry-api (~> 1.1)
       opentelemetry-common (~> 0.20)
       opentelemetry-registry (~> 0.2)
       opentelemetry-semantic_conventions
-    opentelemetry-semantic_conventions (1.36.0)
+    opentelemetry-semantic_conventions (1.37.0)
       opentelemetry-api (~> 1.0)
     pagy (43.3.3)
       json
@@ -631,7 +632,7 @@ DEPENDENCIES
   junction-github!
   opentelemetry-exporter-otlp (~> 0.32)
   opentelemetry-instrumentation-all (~> 0.90)
-  opentelemetry-sdk (~> 1.10)
+  opentelemetry-sdk (~> 1.11)
   propshaft
   puma
   rubocop-rails-omakase
