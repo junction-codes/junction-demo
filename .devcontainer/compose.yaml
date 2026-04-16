@@ -27,6 +27,14 @@ services:
   #   volumes:
   #   - redis-data:/data
 
+  jaeger:
+    image: jaegertracing/jaeger:2.16.0
+    restart: unless-stopped
+    ports:
+    - "4317:4317"   # OTLP gRPC
+    - "4318:4318"   # OTLP HTTP
+    - "16686:16686" # Jaeger UI
+
   postgres:
     image: postgres:18
     restart: unless-stopped

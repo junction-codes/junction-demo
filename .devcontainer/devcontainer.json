@@ -19,13 +19,18 @@
   "containerEnv": {
     "REDIS_URL": "redis://redis:6379/1",
     "KAMAL_REGISTRY_PASSWORD": "$KAMAL_REGISTRY_PASSWORD",
-    "DB_HOST": "postgres"
+    "DB_HOST": "postgres",
+    "OTEL_EXPORTER": "otlp",
+    "OTEL_EXPORTER_OTLP_ENDPOINT": "http://jaeger:4318"
   },
   // Use 'forwardPorts' to make a list of ports inside the container available locally.
   "forwardPorts": [
     3000,
     5432,
-    6379
+    6379,
+    4317, // Jaeger OTLP gRPC
+    4318, // Jaeger OTLP HTTP
+    16686 // Jaeger UI
   ],
   // Configure tool-specific properties.
   // "customizations": {},
