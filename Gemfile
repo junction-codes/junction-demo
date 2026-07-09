@@ -4,7 +4,7 @@ gem "junction-codes", git: "https://github.com/junction-codes/junction.git", bra
 gem "junction-github", git: "https://github.com/junction-codes/junction-github.git", branch: "main"
 gem "opentelemetry-exporter-otlp", "~> 0.32"
 gem "opentelemetry-instrumentation-all", "~> 0.90"
-gem "opentelemetry-sdk", "~> 1.10"
+gem "opentelemetry-sdk", "~> 1.12"
 gem "propshaft"
 gem "puma"
 
